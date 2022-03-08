@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 
     },
     mark: {
-        maxHeight: 20
+        width: 20
     },
     container: {
         flex: 1,
