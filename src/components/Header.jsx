@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         height: height / 10,
         bottom: 0,
         position: 'absolute',
-
+        backgroundColor: '#069420',
 
         borderBottomColor: 'black',
         borderBottomWidth: 4

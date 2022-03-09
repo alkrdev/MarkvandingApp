@@ -1,10 +1,11 @@
 import React from "react"
 import { Text, View, StyleSheet, Platform, Dimensions, TouchableOpacity, TouchableHighlight, Image, Alert, Grid } from "react-native"
 import Constants from "expo-constants"
+import Position from "react-native/Libraries/Components/Touchable/Position";
 
 let mark = 'https://i.imgur.com/GFxREZx.png';
 let maskine = 'https://icon-library.com/images/water-icon/water-icon-25.jpg';
-import Position from "react-native/Libraries/Components/Touchable/Position";
+
 import Header from "./Header"
 
 var width = Dimensions.get('window').width; //full width

@@ -2,7 +2,7 @@ import React from "react"
 import { Text, View, StyleSheet, Platform, Dimensions, TouchableOpacity, TouchableHighlight, Image, Alert } from "react-native"
 import Constants from "expo-constants"
 
-const Time = () => {
+const Time = (props) => {
 
     return (
         <View style={styles.container}>
