@@ -15,9 +15,7 @@ const List = (props) => {
     return (
         <View style={styles.container}>
 
-
-
-            <FlatList
+            <FlatList style={styles.list}
                 data={[
                     { navn: '1', tidTilbage: "1:50" },
                     { navn: '2', tidTilbage: "1:57" },
@@ -36,8 +34,8 @@ const List = (props) => {
                         </View>
 
 
-                        <Text>Vander {item.navn}</Text>
-                        <Text>Tid tilbage: {item.tidTilbage}</Text>
+                        <Text style={styles.textl}>Vander {item.navn}</Text>
+                        <Text style={styles.texth}>Tid tilbage: {item.tidTilbage}</Text>
                     </View>
                 )
                 }
@@ -52,18 +50,43 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#FFF',
-        marginTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
+        marginTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight,
+    },
+    list: {
+        marginBottom: height / 10,
     },
     item: {
-        margin: 25,
+        margin: height / 30,
         fontSize: 18,
-        height: height / 10 * 6,
+        height: height / 10 * 4,
         alignItems: 'center',
         backgroundColor: '#AAA',
     },
     mark: {
-        height: height / 10 * 4,
+        height: height / 10 * 3,
+        width: width / 10 * 8,
         margin: 15,
+
+        objectFit: 'cover',
+    },
+    maskine: {
+        width: width / 10,
+        height: width / 10,
+        left: width / 2 - height / 10 - 15,
+        top: height / 10 * 3 / 2,
+        position: 'absolute',
+    },
+    textl: {
+        position: 'absolute',
+        left: width / 10,
+        fontSize: width/25,
+        bottom: height / 30
+    },
+    texth: {
+        position: 'absolute',
+        right: width / 10,
+        fontSize: width/25,
+        bottom: height / 30
     }
 });
 
