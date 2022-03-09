@@ -10,29 +10,23 @@ var height = Dimensions.get('window').height; //full height
 const Header = (props) => {
     return (
         <View style={styles.view}>
-            <View>
-                <TouchableOpacity onPress={() => props.navigation.navigate('Frontpage', {})}>
-                    <Text style={styles.title}>
-                        Forside
-                    </Text>
-                </TouchableOpacity>
-            </View>
+            <TouchableOpacity onPress={() => props.navigation.navigate('Frontpage', {})}>
+                <Text style={styles.title}>
+                    Forside
+                </Text>
+            </TouchableOpacity>
 
-            <View>
-                <TouchableOpacity onPress={() => props.navigation.navigate('List', {})}>
-                    <Text style={styles.title}>
-                        Liste
-                    </Text>
-                </TouchableOpacity>
-            </View>
+            <TouchableOpacity onPress={() => props.navigation.navigate('List', {})}>
+                <Text style={styles.title}>
+                    Liste
+                </Text>
+            </TouchableOpacity>
 
-            <View>
-                <TouchableOpacity onPress={() => props.navigation.navigate('Start', {})}>
-                    <Text style={styles.title}>
-                        Start vander
-                    </Text>
-                </TouchableOpacity>
-            </View>
+            <TouchableOpacity onPress={() => props.navigation.navigate('Start', {})}>
+                <Text style={styles.title}>
+                    Start vander
+                </Text>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -41,12 +35,11 @@ const styles = StyleSheet.create({
     view: {
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         alignItems: "center",
         width: width,
         height: height / 10,
         bottom: 0,
-        position: 'absolute',
         backgroundColor: '#069420',
 
         borderBottomColor: 'black',
@@ -60,7 +53,7 @@ const styles = StyleSheet.create({
     },
     title: {
         textAlign: "center",
-        fontSize: 47,
+        fontSize: 32,
     },
     profile: {
         height: height / 11,
