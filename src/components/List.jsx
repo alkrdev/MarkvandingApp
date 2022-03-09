@@ -18,11 +18,11 @@ const List = (props) => {
             <FlatList style={styles.list}
                 data={[
                     { navn: '1', tidTilbage: "1:50" },
-                    { navn: '2', tidTilbage: "1:57" },
+                    { navn: '4', tidTilbage: "1:57" },
                     { navn: '3', tidTilbage: "5:40" },
-                    { navn: '4', tidTilbage: "6:25" },
-                    { navn: '5', tidTilbage: "10:16" },
-                    { navn: '6', tidTilbage: "16:56" },
+                    { navn: '6', tidTilbage: "6:25" },
+                    { navn: '2', tidTilbage: "10:16" },
+                    { navn: '5', tidTilbage: "16:56" },
                 ]}
                 renderItem={({ item }) => (
                     <View style={styles.item}>
